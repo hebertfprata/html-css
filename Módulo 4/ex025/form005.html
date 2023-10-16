@@ -9,7 +9,7 @@
     <form autocomplete="off" action="cadastro.php" method="post">
         <fieldset>
             <legend>Esportes</legend>
-            <input type="checkbox" name="fut" id="ifut">
+            <input type="checkbox" name="fut" id="ifut" checked>
             <label for="ifut">Futebol</label> <br>
             <input type="checkbox" name="basq" id="ibasq">
             <label for="ibasq">Basquete</label> <br>
@@ -18,10 +18,15 @@
             <input type="checkbox" name="ten" id="iten">
             <label for="iten">Tênis</label> <br>
         </fieldset>
-        <p>
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sx" id="isxmas">
+                <label for="isxmas">Masculino</label>
+                <input type="radio" name="sx" id="isxfem">
+                <label for="isxfem">Feminino</label>
+            </fieldset>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
-        </p>
     </form>
 </body>
 </html>
